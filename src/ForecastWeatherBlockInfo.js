@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ForecastWeatherBlockInfo.css";
+
 export default function ForecastWeatherBlockInfo() {
   return (
     <div className="col-2">
