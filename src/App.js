@@ -8,10 +8,8 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="app-wrapper">
-          <SearchForm />
-          <WeatherBlock />
-        </div>
+        <SearchForm />
+        <WeatherBlock />
         <footer>
           <a
             href="https://github.com/KikiCheung/weather-app-react"

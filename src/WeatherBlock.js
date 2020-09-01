@@ -10,7 +10,7 @@ import "./ForecastWeatherBlockInfo.css";
 export default function WeatherBlock() {
   return (
     <div className="row">
-      <CurrentWeatherBlock />
+      <CurrentWeatherBlock defaultCity="New York" />
       <ForecastWeatherBlockImg />
       <ForecastWeatherBlockInfo />
     </div>
