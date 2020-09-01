@@ -34,7 +34,7 @@ export default function CurrentWeatherBlock(props) {
         <br />
         Humidity: {props.data.humidity} %
         <br />
-        Wind: {props.data.wind} km/h
+        Wind: {Math.round(props.data.wind)} km/h
       </p>
     </div>
   );
