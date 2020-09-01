@@ -13,14 +13,6 @@ h1 {
   box-shadow: 2px 3px 5px 1px darkcyan;
 }
 
-.current-weather-img {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  left: -15px;
-  top: -15px;
-}
-
 .last-update {
   font-size: 18px;
   margin: 0;

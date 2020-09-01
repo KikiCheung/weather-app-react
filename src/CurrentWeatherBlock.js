@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 import "./CurrentWeatherBlock.css";
 
@@ -7,11 +8,7 @@ export default function CurrentWeatherBlock(props) {
   return (
     <div className="col-7">
       <div className="current-weather-img-border">
-        <img
-          src={props.data.img}
-          alt={props.data.description}
-          className="current-weather-img"
-        />
+        <WeatherIcon code={props.data.icon} />
       </div>
       <h1>{props.data.city}</h1>
       <p className="last-update">

@@ -12,7 +12,7 @@ export default function SearchForm(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
-      img: response.data.weather[0].icon,
+      icon: response.data.weather[0].icon,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       temp: response.data.main.temp,
