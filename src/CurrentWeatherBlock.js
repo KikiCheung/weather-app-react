@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function CurrentWeatherBlock(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -11,7 +12,7 @@ export default function CurrentWeatherBlock(props) {
       ready: true,
       img: response.data.weather[0].icon,
       city: response.data.name,
-      date: "2020 09 01",
+      date: new Date(response.data.dt * 1000),
       temp: response.data.main.temp,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
@@ -31,7 +32,8 @@ export default function CurrentWeatherBlock(props) {
         </div>
         <h1>{weatherData.city}</h1>
         <p className="last-update">
-          Last updated: <span className="day-time">{weatherData.date}</span>
+          Last updated: {""}
+          <FormattedDate date={weatherData.date} />
         </p>
         <h2>
           <span className="temp">{Math.round(weatherData.temp)}</span>
