@@ -1,0 +1,59 @@
+h1 {
+  margin: 0;
+  color: #1a237e;
+}
+
+.current-weather-img-border {
+  width: 250px;
+  height: 250px;
+  margin: 20px 0 5px 0;
+  padding: 30px;
+  border: 10px solid white;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px 1px darkcyan;
+}
+
+.current-weather-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: -15px;
+  top: -15px;
+}
+
+.last-update,
+.day-time {
+  font-size: 18px;
+  margin: 0;
+}
+
+.temp {
+  font-size: 120px;
+  color: #1a237e;
+  margin: 0;
+}
+
+.units {
+  font-size: 23px;
+  position: relative;
+  top: -65px;
+}
+
+.inactive {
+  color: #212529;
+  cursor: default;
+}
+
+.inactive:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+.otherinfo {
+  font-size: 18px;
+  margin: 0;
+}
+
+.description {
+  text-transform: capitalize;
+}

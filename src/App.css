@@ -1,0 +1,13 @@
+.app-wrapper {
+  background-image: linear-gradient(to top, yellow 0%, lightyellow 100%);
+  max-width: 570px;
+  padding: 25px 35px;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 15px double white;
+}
+
+footer {
+  margin: 15px 0;
+  text-align: center;
+}
