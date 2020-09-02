@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CurrentWeatherBlock from "./CurrentWeatherBlock";
-import ForecastWeatherBlockImg from "./ForecastWeatherBlockImg";
-import ForecastWeatherBlockInfo from "./ForecastWeatherBlockInfo";
+import ForecastWeatherBlock from "./ForecastWeatherBlock";
 
 export default function SearchForm(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -82,8 +81,7 @@ export default function SearchForm(props) {
         </form>
         <div className="row">
           <CurrentWeatherBlock data={weatherData} />
-          <ForecastWeatherBlockImg />
-          <ForecastWeatherBlockInfo />
+          <ForecastWeatherBlock city={weatherData.city} />
         </div>
       </div>
     );
