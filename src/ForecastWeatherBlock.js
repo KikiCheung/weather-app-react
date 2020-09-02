@@ -10,7 +10,6 @@ export default function ForecastWeatherBlock(props) {
   const [loaded, setLoaded] = useState(false);
 
   function handleForecastResponse(response) {
-    console.log(response.data);
     setForecast(response.data);
     setLoaded(true);
   }

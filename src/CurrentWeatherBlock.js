@@ -1,6 +1,6 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import FormattedDate from "./FormattedDate";
 import WeatherTempConversion from "./WeatherTempConversion";
 
 import "./CurrentWeatherBlock.css";
@@ -20,9 +20,7 @@ export default function CurrentWeatherBlock(props) {
         <WeatherTempConversion celsius={props.data.temp} />
       </h2>
       <p className="otherinfo">
-        <strong>
-          <span className="text-capitalize">{props.data.description}</span>
-        </strong>
+        <strong className="text-capitalize">{props.data.description}</strong>
         <br />
         Humidity: {props.data.humidity} %
         <br />

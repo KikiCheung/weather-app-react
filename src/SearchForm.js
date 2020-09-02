@@ -4,11 +4,10 @@ import CurrentWeatherBlock from "./CurrentWeatherBlock";
 import ForecastWeatherBlock from "./ForecastWeatherBlock";
 
 export default function SearchForm(props) {
-  const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       icon: response.data.weather[0].icon,
