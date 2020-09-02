@@ -14,7 +14,7 @@ h1 {
 }
 
 .last-update {
-  font-size: 18px;
+  font-size: 17px;
   margin: 0;
 }
 
@@ -30,17 +30,7 @@ h1 {
   top: -65px;
 }
 
-.inactive {
-  color: #212529;
-  cursor: default;
-}
-
-.inactive:hover {
-  text-decoration: none;
-  color: #212529;
-}
-
 .otherinfo {
-  font-size: 18px;
+  font-size: 17px;
   margin: 0;
 }

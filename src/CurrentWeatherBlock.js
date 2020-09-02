@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTempConversion from "./WeatherTempConversion";
 
 import "./CurrentWeatherBlock.css";
 
@@ -16,13 +17,7 @@ export default function CurrentWeatherBlock(props) {
         <FormattedDate date={props.data.date} />
       </p>
       <h2>
-        <span className="temp">{Math.round(props.data.temp)}</span>
-        <span className="units">
-          <a href="/" className="inactive">
-            °C
-          </a>{" "}
-          |<a href="/">°F</a>
-        </span>
+        <WeatherTempConversion celsius={props.data.temp} />
       </h2>
       <p className="otherinfo">
         <strong>
